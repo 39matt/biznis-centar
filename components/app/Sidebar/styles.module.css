@@ -1,0 +1,58 @@
+.sidebar {
+  width: 100%;
+  min-height: 1024px;
+  max-width: 304px;
+  background-color: #f7f7f7;
+  border-radius: 0 1.5rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  @apply flex items-center p-8 pb-[3.00125rem];
+}
+
+.header h3 {
+  margin-left: 8px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.menu {
+  @apply grow;
+  padding: 0 0.93rem;
+}
+
+.menu li {
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  @apply transition-all;
+}
+
+.menu li:hover,
+.active {
+  background-color: #3b82f6;
+}
+
+.menu a {
+  display: flex;
+  padding: 1rem;
+  @apply font-bold text-base;
+}
+
+.menu span {
+  margin-right: 1.5rem;
+}
+
+.active a,
+.menu li:hover a {
+  color: #fff;
+}
+
+.footer {
+  padding: 2rem;
+}
