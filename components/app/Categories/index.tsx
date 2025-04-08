@@ -51,13 +51,13 @@ export function Categories() {
   return (
       <div className="mb-12">
         <div className="flex mb-8">
-          <h2 className="flex-grow text-2xl font-bold">Istraži kategorije</h2>
-          <Link href="/categories/1" className="text-purple-700 text-lg font-semibold flex items-center" passHref>
-              Pogledaj sve
-              <IconBase iconName="chevron-right" color="#5b4aa3" size={12}  />
-          </Link>
+          {/*<h2 className="flex-grow text-2xl font-bold">Istraži kategorije</h2>*/}
+          {/*<Link href="/categories/1" className="text-purple-700 text-lg font-semibold flex items-center" passHref>*/}
+          {/*    Pogledaj sve*/}
+          {/*    <IconBase iconName="chevron-right" color="#5b4aa3" size={12}  />*/}
+          {/*</Link>*/}
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-between">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-between">
           {categories.map((category) => (
               <Category key={category.name} {...category} />
           ))}

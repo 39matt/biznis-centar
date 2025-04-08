@@ -29,7 +29,8 @@ export function ServiceItem({
       <div className="w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
         <div className="relative h-[120px] sm:h-[140px]">
           <Image
-            src={imageUrl}
+              fill
+              src={imageUrl}
             alt={name}
             className="w-full h-full object-cover"
           />

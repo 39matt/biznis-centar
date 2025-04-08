@@ -29,6 +29,7 @@ const Team = () => {
                         backgroundRepeat: "no-repeat",
                      }}>
                      <Image
+                         fill
                         src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt=""
                         className="z-0 h-full w-full rounded-[10px] object-cover"
@@ -50,6 +51,7 @@ const Team = () => {
                         backgroundRepeat: "no-repeat",
                      }}>
                      <Image
+                         fill
                         src="https://images.pexels.com/photos/4253312/pexels-photo-4253312.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt=""
                         className="z-0 h-full w-full rounded-[10px] object-cover"
@@ -71,6 +73,7 @@ const Team = () => {
                         backgroundRepeat: "no-repeat",
                      }}>
                      <Image
+                         fill
                         src="https://images.pexels.com/photos/3771120/pexels-photo-3771120.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt=""
                         className="z-0 h-full w-full rounded-[10px] object-cover"

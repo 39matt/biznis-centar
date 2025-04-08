@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["images.pexels.com"],
+    remotePatterns: [{hostname:"images.pexels.com"},{hostname:"as1.ftcdn.net"},{hostname:"nextjs.org"}],
   },
 }
 

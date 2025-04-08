@@ -21,9 +21,11 @@ export function Sidebar({ isOpen = false, onClose }: SidebarProps) {
                     onClick={onClose}
                 />
             )}
-            
-            {/* Sidebar */}
-            <div className={`fixed top-0 left-0 h-screen w-[304px] bg-[#f7f7f7] rounded-l-[1.5rem] flex flex-col transform transition-transform duration-300 ease-in-out z-50 ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
+
+            {/* Sidebar - Full screen on mobile, normal width on desktop */}
+            <div className={`fixed top-0 left-0 h-screen bg-[#f7f7f7] flex flex-col transform transition-transform duration-300 ease-in-out z-50 
+                ${isOpen ? 'translate-x-0' : '-translate-x-full'} 
+                w-full lg:w-[304px] lg:translate-x-0 lg:rounded-r-[1.5rem]`}>
                 <div className="flex items-center justify-between p-8 pb-[3.00125rem]">
                     <h3 className="text-xl font-bold text-[#182135]">Biznis Centar</h3>
                     <button

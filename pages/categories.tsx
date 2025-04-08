@@ -81,6 +81,7 @@ const Categories: NextPage = () => {
                             >
                                 <div className="aspect-w-16 aspect-h-9 h-48">
                                     <Image
+                                        fill
                                         src={category.imageUrl}
                                         alt={category.name}
                                         className="object-cover w-full h-full"
