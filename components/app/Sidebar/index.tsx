@@ -36,7 +36,7 @@ export function Sidebar({ isOpen = false, onClose }: SidebarProps) {
 
                 <ul className="flex-1 px-[0.93rem] space-y-2">
                     <li className={`h-[3.5rem] rounded-[0.75rem] transition-all hover:bg-[#3b82f6] ${currentPath === "/home" ? "bg-[#3b82f6]" : ""}`}>
-                        <Link href="/home" className={`flex p-4 font-bold text-base ${currentPath === "/home" ? "text-white" : "text-[#182135]"}`}>
+                        <Link passHref href="/home" className={`flex p-4 font-bold text-base ${currentPath === "/home" ? "text-white" : "text-[#182135]"}`}>
                             <span className="mr-3">
                                 <IconBase iconName="home" color={currentPath === "/home" ? "#ffffff" : "#182135"} />
                             </span>
@@ -45,7 +45,7 @@ export function Sidebar({ isOpen = false, onClose }: SidebarProps) {
                     </li>
 
                     <li className={`h-[3.5rem] rounded-[0.75rem] transition-all hover:bg-[#3b82f6] ${currentPath === "/explore" ? "bg-[#3b82f6]" : ""}`}>
-                        <Link href="/explore" className={`flex p-4 font-bold text-base ${currentPath === "/explore" ? "text-white" : "text-[#182135]"}`}>
+                        <Link passHref href="/explore" className={`flex p-4 font-bold text-base ${currentPath === "/explore" ? "text-white" : "text-[#182135]"}`}>
                             <span className="mr-3">
                                 <IconBase iconName="feed" color={currentPath === "/explore" ? "#ffffff" : "#182135"} />
                             </span>
@@ -54,7 +54,7 @@ export function Sidebar({ isOpen = false, onClose }: SidebarProps) {
                     </li>
 
                     <li className={`h-[3.5rem] rounded-[0.75rem] transition-all hover:bg-[#3b82f6] ${currentPath === "/favorites" ? "bg-[#3b82f6]" : ""}`}>
-                        <Link href="/favorites" className={`flex p-4 font-bold text-base ${currentPath === "/favorites" ? "text-white" : "text-[#182135]"}`}>
+                        <Link passHref href="/favorites" className={`flex p-4 font-bold text-base ${currentPath === "/favorites" ? "text-white" : "text-[#182135]"}`}>
                             <span className="mr-3">
                                 <IconBase iconName="bookmark" color={currentPath === "/favorites" ? "#ffffff" : "#182135"} />
                             </span>

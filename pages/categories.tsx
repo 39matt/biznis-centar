@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../lib/firebase";
+import Image from "next/image";
 
 interface Category {
     id: string;
@@ -79,7 +80,7 @@ const Categories: NextPage = () => {
                                 onClick={() => router.push(`/categories/${category.id}`)}
                             >
                                 <div className="aspect-w-16 aspect-h-9 h-48">
-                                    <img
+                                    <Image
                                         src={category.imageUrl}
                                         alt={category.name}
                                         className="object-cover w-full h-full"

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Team = () => {
    return (
@@ -11,7 +12,7 @@ const Team = () => {
                </h2>
                <p className="max-w-2xl mx-auto mt-4 text-xl text-gray-600">
                   Behind the success of our website is a dynamic team of
-                  dedicated individuals. It's the passion, expertise, and
+                  dedicated individuals. Its the passion, expertise, and
                   collaborative spirit of every person in our group that has
                   shaped this success story.
                </p>
@@ -27,7 +28,7 @@ const Team = () => {
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                      }}>
-                     <img
+                     <Image
                         src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt=""
                         className="z-0 h-full w-full rounded-[10px] object-cover"
@@ -48,7 +49,7 @@ const Team = () => {
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                      }}>
-                     <img
+                     <Image
                         src="https://images.pexels.com/photos/4253312/pexels-photo-4253312.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt=""
                         className="z-0 h-full w-full rounded-[10px] object-cover"
@@ -69,7 +70,7 @@ const Team = () => {
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                      }}>
-                     <img
+                     <Image
                         src="https://images.pexels.com/photos/3771120/pexels-photo-3771120.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt=""
                         className="z-0 h-full w-full rounded-[10px] object-cover"

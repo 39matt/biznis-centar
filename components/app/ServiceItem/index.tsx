@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { IconBase } from "../index";
+import Image from "next/image";
 
 interface ServiceItemProps {
   id: string;
@@ -24,10 +25,10 @@ export function ServiceItem({
   imageUrl,
 }: ServiceItemProps) {
   return (
-    <Link href={`/services/${id}`} className="block w-full">
+    <Link href={`/services/${id}`} className="block w-full" passHref>
       <div className="w-full bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
         <div className="relative h-[120px] sm:h-[140px]">
-          <img
+          <Image
             src={imageUrl}
             alt={name}
             className="w-full h-full object-cover"

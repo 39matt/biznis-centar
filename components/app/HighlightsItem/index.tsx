@@ -24,7 +24,7 @@ export function HighlightsItem({
   imageUrl,
 }: HighlightsItemProps) {
   return (
-    <Link href={`/services/${id}`} className="block w-full">
+    <Link href={`/services/${id}`} className="block w-full" passHref>
       <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
         <div
           className="absolute inset-0 bg-cover bg-center"

@@ -75,7 +75,7 @@ const ServicePage: NextPage = () => {
                 setJobsData(flattenedJobs);
 
 
-                setService({ id: serviceDoc.id, ...serviceData });
+                setService(serviceData);
             } catch (err) {
                 console.error("Error fetching service:", err);
                 setError("Greška pri učitavanju usluge");

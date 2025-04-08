@@ -48,7 +48,7 @@ const CategoryPage: NextPage = () => {
                 }
 
                 const categoryData = categoryDoc.data() as Category;
-                setCategory({ id: categoryDoc.id, ...categoryData });
+                setCategory(categoryData);
 
                 // Fetch services for this category
                 const servicesRef = collection(db, "services");

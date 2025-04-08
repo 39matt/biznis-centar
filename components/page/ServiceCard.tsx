@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import {redirect} from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const ServiceCard = ({ id, name, price, desc, img, rating }: {id: number, name: string, price: string, desc:string, img:string, rating:number}) => {
    // const dispatch = useDispatch();
@@ -10,7 +11,7 @@ const ServiceCard = ({ id, name, price, desc, img, rating }: {id: number, name: 
       <div
          className="font-bold w-[300px] bg-white p-5 flex flex-col rounded-2xl gap-2 shadow-xl hover:shadow-2xl transition-all duration-300
       ">
-         <img
+         <Image
             src={img}
             alt={name}
             className="w-full h-[180px] object-cover rounded-lg hover:scale-105 cursor-pointer transition-all duration-500 ease-in-out"
@@ -27,6 +28,7 @@ const ServiceCard = ({ id, name, price, desc, img, rating }: {id: number, name: 
 
             {/* Add to Cart */}
             <Link
+                passHref
                href={`/product/${id}`}
                className="px-4 py-2 text-sm font-semibold text-white rounded-lg bg-blue-600 hover:bg-blue-500 transition-colors">
                Istraži

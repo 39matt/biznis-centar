@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Hero = () => {
    return (
@@ -47,7 +48,7 @@ const Hero = () => {
             </div>
 
             <div className="relative px-2 lg:col-span-5 xl:col-span-6 lg:mb-9">
-               <img
+               <Image
                   className="aspect-[3/2] bg-gray-50 object-cover lg:aspect-[4/3] lg:h-[530px] xl:aspect-[1/1] lg:mt-14 rounded-3xl shadow-2xl "
                   src="https://as1.ftcdn.net/v2/jpg/06/22/04/22/1000_F_622042299_cvRYKTzOdvJQuwUdqtdzXpYr8A3Ll41J.jpg"
                   alt=""

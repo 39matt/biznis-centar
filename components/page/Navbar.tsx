@@ -24,7 +24,7 @@ const Navbar = () => {
       <>
          <div className="relative w-full px-4 bg-white">
             <div className="flex items-center justify-center py-2 mx-auto max-w-7xl sm:px-6 lg:px-10">
-               <Link href="/">
+               <Link href="/" passHref>
                   <div className="inline-flex items-center space-x-2">
                      <div className="flex flex-col justify-between my-5 lg:flex-row">
                         <div className="">

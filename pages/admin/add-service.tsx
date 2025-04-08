@@ -180,7 +180,7 @@ export default function AddService() {
 
             <div>
               <label htmlFor="bonus" className="block text-sm font-medium text-gray-700 mb-1">
-                Bonus (npr. "Popust na prvi servis")
+                Bonus (npr. Popust na prvi servis)
               </label>
               <input
                 type="text"

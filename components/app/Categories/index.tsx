@@ -52,7 +52,7 @@ export function Categories() {
       <div className="mb-12">
         <div className="flex mb-8">
           <h2 className="flex-grow text-2xl font-bold">Istraži kategorije</h2>
-          <Link href="/categories/1" className="text-purple-700 text-lg font-semibold flex items-center">
+          <Link href="/categories/1" className="text-purple-700 text-lg font-semibold flex items-center" passHref>
               Pogledaj sve
               <IconBase iconName="chevron-right" color="#5b4aa3" size={12}  />
           </Link>

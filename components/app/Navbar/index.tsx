@@ -17,7 +17,7 @@ export function Navbar({ onMenuClick }: NavbarProps) {
             </button>
             <ul className="flex gap-4">
                 <li className="flex items-center">
-                    <Link href="/public" className="flex items-center">
+                    <Link href="/public" className="flex items-center" passHref>
                         <span className="mr-2">
                             <IconBase iconName="target-location" size={24} color="#fb6d3a" />
                         </span>
@@ -28,7 +28,7 @@ export function Navbar({ onMenuClick }: NavbarProps) {
                     </Link>
                 </li>
                 <li className="flex items-center">
-                    <Link href="/categories" className="flex items-center">
+                    <Link href="/categories" className="flex items-center" passHref>
                         <span className="mr-2">
                             <IconBase iconName="briefcase" color="#503e9d" />
                         </span>
@@ -39,7 +39,7 @@ export function Navbar({ onMenuClick }: NavbarProps) {
                     </Link>
                 </li>
                 <li className="flex items-center">
-                    <Link href="/public" className="flex items-center">
+                    <Link href="/public" className="flex items-center" passHref>
                         <span className="mr-2">
                             <IconBase iconName="star" color="#facd5d" />
                         </span>

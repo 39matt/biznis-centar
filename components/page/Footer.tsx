@@ -8,7 +8,7 @@ const Footer = () => {
          <div className="max-w-7xl mx-auto py-12 px-4">
             <div className="flex flex-col md:flex-row items-center justify-between">
                <div className="mb-8 md:mb-0">
-                  <Link href="/" className="flex items-center">
+                  <Link href="/" className="flex items-center" passHref>
                      <span className="text-2xl font-bold">
                         Biznis <span className="text-blue-600">Centar</span>
                         </span>

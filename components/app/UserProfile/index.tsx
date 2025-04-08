@@ -15,7 +15,8 @@ export const UserProfile = () => {
     if (!user) {
         return (
             <div className="flex items-center gap-4">
-                <Link 
+                <Link
+                    passHref
                     href="/login"
                     className="px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-500 transition-colors"
                 >
@@ -33,7 +34,8 @@ export const UserProfile = () => {
 
     return (
         <div className="flex items-center gap-4">
-            <Link 
+            <Link
+                passHref
                 href="/profile"
                 className="flex items-center gap-2 text-slate-700 hover:text-slate-900 transition-colors"
             >
