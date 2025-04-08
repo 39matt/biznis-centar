@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { IconBase, SearchBar } from "../index";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 interface NavbarProps {
     onMenuClick?: () => void;
@@ -14,8 +15,9 @@ export function Navbar({ onMenuClick }: NavbarProps) {
                 <button
                     onClick={onMenuClick}
                     className="block lg:hidden p-2 hover:bg-gray-100 rounded-lg"
+                    aria-label="Open menu"
                 >
-                    <IconBase iconName="menu" size={24} color="#503e9d" />
+                    <RxHamburgerMenu size={24}/>
                 </button>
                 <ul className="flex flex-wrap gap-4 text-sm">
                     <li className="flex items-center">

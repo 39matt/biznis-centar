@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { IconBase, UserProfile } from "../index";
 import { useRouter } from "next/router";
+import { IoIosArrowBack } from "react-icons/io";
 
 interface SidebarProps {
     isOpen?: boolean;
@@ -32,7 +33,7 @@ export function Sidebar({ isOpen = false, onClose }: SidebarProps) {
                         onClick={onClose}
                         className="lg:hidden p-2 hover:bg-gray-100 rounded-lg"
                     >
-                        <IconBase iconName="close" size={24} color="#182135" />
+                        <IoIosArrowBack size={24}/>
                     </button>
                 </div>
 
